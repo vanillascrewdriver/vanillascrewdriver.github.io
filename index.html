@@ -359,7 +359,15 @@ An artificial neural network is an interconnected group of nodes, akin to the va
 
 <h2><span class="mw-headline" id="Models">Using linear algebra</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Artificial_neural_network&amp;action=edit&amp;section=7" title="Edit section: Models">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
 <p>We are going to look specifically at the calculation of a single layer. Using the same variables as above, we will remove subscripts to represent the set of all nodes in a specific layer as a vector (e.g. <i>a{k}</i> is the vector of activations of all nodes in layer <i>k</i>). We can then create the following formula:</p>
-	
+<img src="/equation1.png" />
+<p>where</p>
+<img src="/equation2.png" />
+<p>Note: w{i,k} in this equation is a vector of weights from node <i>i</i> in layer <i>k-1</i> into each of the nodes in layer <i>k</i></p>
+<p>Essentially, we are treating the outputs of the previous layer as a vector, and the weights coming out of each node as a column vector in the matrix <i>W</i>. This way, when we multiply the matrix by the vector, we get a vector of the values of each of the nodes in the current layer.</p>
+<p>As an example, take the following two layers of a neural network:</p>
+<img src = "exampleNetwork.png" />
+<p>Each number above an arrow represents the weight from one node to the other. We would then set up the following equation to find the values of the nodes in the right layer:</p>
+
 	
 <h2><span class="mw-headline" id="Variants">Application</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Artificial_neural_network&amp;action=edit&amp;section=23" title="Edit section: Variants">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
 <h3><span class="mw-headline" id="Group_method_of_data_handling">Group method of data handling</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Artificial_neural_network&amp;action=edit&amp;section=24" title="Edit section: Group method of data handling">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
