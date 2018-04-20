@@ -290,80 +290,20 @@
 An artificial neural network is an interconnected group of nodes, akin to the vast network of <a href="/wiki/Neuron" title="Neuron">neurons</a> in a <a href="/wiki/Brain" title="Brain">brain</a>. Here, each circular node represents an <a href="/wiki/Artificial_neuron" title="Artificial neuron">artificial neuron</a> and an arrow represents a connection from the output of one artificial neuron to the input of another.</div>
 </div>
 </div>
-<p><b>Neural Networks</b></p>
+<p><b>Neural Networks</b> are a method of data processing that mimic the concept of neural activity in the brain to convert some input into an appropriate output by passing values through a system of nodes, called neurons. </p>
 <div class="toclimit-3">
 <div id="toc" class="toc">
 <div class="toctitle" lang="en" dir="ltr">
 <h2>Contents</h2>
 </div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a>
-<ul>
-<li class="toclevel-2 tocsection-2"><a href="#Hebbian_learning"><span class="tocnumber">1.1</span> <span class="toctext">Hebbian learning</span></a></li>
-<li class="toclevel-2 tocsection-3"><a href="#Backpropagation"><span class="tocnumber">1.2</span> <span class="toctext">Backpropagation</span></a></li>
-<li class="toclevel-2 tocsection-4"><a href="#Hardware-based_designs"><span class="tocnumber">1.3</span> <span class="toctext">Hardware-based designs</span></a></li>
-<li class="toclevel-2 tocsection-5"><a href="#Contests"><span class="tocnumber">1.4</span> <span class="toctext">Contests</span></a></li>
-<li class="toclevel-2 tocsection-6"><a href="#Convolutional_networks"><span class="tocnumber">1.5</span> <span class="toctext">Convolutional networks</span></a></li>
-</ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">How they work</span></a>
 </li>
-<li class="toclevel-1 tocsection-7"><a href="#Models"><span class="tocnumber">2</span> <span class="toctext">Models</span></a>
-<ul>
-<li class="toclevel-2 tocsection-8"><a href="#Components_of_an_artificial_neural_network"><span class="tocnumber">2.1</span> <span class="toctext">Components of an artificial neural network</span></a>
-<ul>
-<li class="toclevel-3 tocsection-9"><a href="#Neurons"><span class="tocnumber">2.1.1</span> <span class="toctext">Neurons</span></a></li>
-<li class="toclevel-3 tocsection-10"><a href="#Connections_and_weights"><span class="tocnumber">2.1.2</span> <span class="toctext">Connections and weights</span></a></li>
-<li class="toclevel-3 tocsection-11"><a href="#Propagation_function"><span class="tocnumber">2.1.3</span> <span class="toctext">Propagation function</span></a></li>
-<li class="toclevel-3 tocsection-12"><a href="#Learning_rule"><span class="tocnumber">2.1.4</span> <span class="toctext">Learning rule</span></a></li>
-</ul>
+<li class="toclevel-1 tocsection-7"><a href="#Models"><span class="tocnumber">2</span> <span class="toctext">Using linear algebra</span></a>
 </li>
-<li class="toclevel-2 tocsection-13"><a href="#Neural_networks_as_functions"><span class="tocnumber">2.2</span> <span class="toctext">Neural networks as functions</span></a></li>
-<li class="toclevel-2 tocsection-14"><a href="#Learning"><span class="tocnumber">2.3</span> <span class="toctext">Learning</span></a>
-<ul>
-<li class="toclevel-3 tocsection-15"><a href="#Choosing_a_cost_function"><span class="tocnumber">2.3.1</span> <span class="toctext">Choosing a cost function</span></a></li>
-<li class="toclevel-3 tocsection-16"><a href="#Backpropagation_2"><span class="tocnumber">2.3.2</span> <span class="toctext">Backpropagation</span></a></li>
-</ul>
+<li class="toclevel-1 tocsection-23"><a href="#Variants"><span class="tocnumber">3</span> <span class="toctext">Application</span></a>
 </li>
-<li class="toclevel-2 tocsection-17"><a href="#Learning_paradigms"><span class="tocnumber">2.4</span> <span class="toctext">Learning paradigms</span></a>
-<ul>
-<li class="toclevel-3 tocsection-18"><a href="#Supervised_learning"><span class="tocnumber">2.4.1</span> <span class="toctext">Supervised learning</span></a></li>
-<li class="toclevel-3 tocsection-19"><a href="#Unsupervised_learning"><span class="tocnumber">2.4.2</span> <span class="toctext">Unsupervised learning</span></a></li>
-<li class="toclevel-3 tocsection-20"><a href="#Reinforcement_learning"><span class="tocnumber">2.4.3</span> <span class="toctext">Reinforcement learning</span></a></li>
-<li class="toclevel-3 tocsection-21"><a href="#Convergent_recursive_learning_algorithm"><span class="tocnumber">2.4.4</span> <span class="toctext">Convergent recursive learning algorithm</span></a></li>
-</ul>
-</li>
-<li class="toclevel-2 tocsection-22"><a href="#Learning_algorithms"><span class="tocnumber">2.5</span> <span class="toctext">Learning algorithms</span></a></li>
-</ul>
-</li>
-<li class="toclevel-1 tocsection-23"><a href="#Variants"><span class="tocnumber">3</span> <span class="toctext">Variants</span></a>
-<ul>
-<li class="toclevel-2 tocsection-24"><a href="#Group_method_of_data_handling"><span class="tocnumber">3.1</span> <span class="toctext">Group method of data handling</span></a></li>
-<li class="toclevel-2 tocsection-25"><a href="#Convolutional_neural_networks"><span class="tocnumber">3.2</span> <span class="toctext">Convolutional neural networks</span></a></li>
-<li class="toclevel-2 tocsection-26"><a href="#Long_short-term_memory"><span class="tocnumber">3.3</span> <span class="toctext">Long short-term memory</span></a></li>
-<li class="toclevel-2 tocsection-27"><a href="#Deep_reservoir_computing"><span class="tocnumber">3.4</span> <span class="toctext">Deep reservoir computing</span></a></li>
-<li class="toclevel-2 tocsection-28"><a href="#Deep_belief_networks"><span class="tocnumber">3.5</span> <span class="toctext">Deep belief networks</span></a></li>
-<li class="toclevel-2 tocsection-29"><a href="#Large_memory_storage_and_retrieval_neural_networks"><span class="tocnumber">3.6</span> <span class="toctext">Large memory storage and retrieval neural networks</span></a></li>
-<li class="toclevel-2 tocsection-30"><a href="#Stacked_(de-noising)_auto-encoders"><span class="tocnumber">3.7</span> <span class="toctext">Stacked (de-noising) auto-encoders</span></a></li>
-<li class="toclevel-2 tocsection-31"><a href="#Deep_stacking_networks"><span class="tocnumber">3.8</span> <span class="toctext">Deep stacking networks</span></a></li>
-<li class="toclevel-2 tocsection-32"><a href="#Tensor_deep_stacking_networks"><span class="tocnumber">3.9</span> <span class="toctext">Tensor deep stacking networks</span></a></li>
-<li class="toclevel-2 tocsection-33"><a href="#Spike-and-slab_RBMs"><span class="tocnumber">3.10</span> <span class="toctext">Spike-and-slab RBMs</span></a></li>
-<li class="toclevel-2 tocsection-34"><a href="#Compound_hierarchical-deep_models"><span class="tocnumber">3.11</span> <span class="toctext">Compound hierarchical-deep models</span></a></li>
-<li class="toclevel-2 tocsection-35"><a href="#Deep_predictive_coding_networks"><span class="tocnumber">3.12</span> <span class="toctext">Deep predictive coding networks</span></a></li>
-<li class="toclevel-2 tocsection-36"><a href="#Networks_with_separate_memory_structures"><span class="tocnumber">3.13</span> <span class="toctext">Networks with separate memory structures</span></a>
-<ul>
-<li class="toclevel-3 tocsection-37"><a href="#LSTM-related_differentiable_memory_structures"><span class="tocnumber">3.13.1</span> <span class="toctext">LSTM-related differentiable memory structures</span></a>
-<ul>
-<li class="toclevel-4 tocsection-38"><a href="#Neural_Turing_machines"><span class="tocnumber">3.13.1.1</span> <span class="toctext">Neural Turing machines</span></a></li>
-</ul>
-</li>
-<li class="toclevel-3 tocsection-39"><a href="#Semantic_hashing"><span class="tocnumber">3.13.2</span> <span class="toctext">Semantic hashing</span></a></li>
-<li class="toclevel-3 tocsection-40"><a href="#Memory_networks"><span class="tocnumber">3.13.3</span> <span class="toctext">Memory networks</span></a></li>
-<li class="toclevel-3 tocsection-41"><a href="#Pointer_networks"><span class="tocnumber">3.13.4</span> <span class="toctext">Pointer networks</span></a></li>
-<li class="toclevel-3 tocsection-42"><a href="#Encoder–decoder_networks"><span class="tocnumber">3.13.5</span> <span class="toctext">Encoder–decoder networks</span></a></li>
-</ul>
-</li>
-<li class="toclevel-2 tocsection-43"><a href="#Multilayer_kernel_machine"><span class="tocnumber">3.14</span> <span class="toctext">Multilayer kernel machine</span></a></li>
-</ul>
-</li>
+<!--
 <li class="toclevel-1 tocsection-44"><a href="#Neural_architecture_search"><span class="tocnumber">4</span> <span class="toctext">Neural architecture search</span></a></li>
 <li class="toclevel-1 tocsection-45"><a href="#Use"><span class="tocnumber">5</span> <span class="toctext">Use</span></a></li>
 <li class="toclevel-1 tocsection-46"><a href="#Applications"><span class="tocnumber">6</span> <span class="toctext">Applications</span></a>
@@ -399,6 +339,7 @@ An artificial neural network is an interconnected group of nodes, akin to the va
 <li class="toclevel-1 tocsection-64"><a href="#Bibliography"><span class="tocnumber">13</span> <span class="toctext">Bibliography</span></a></li>
 <li class="toclevel-1 tocsection-65"><a href="#External_links"><span class="tocnumber">14</span> <span class="toctext">External links</span></a></li>
 </ul>
+-->
 </div>
 </div>
 <h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Artificial_neural_network&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
