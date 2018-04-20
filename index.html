@@ -350,15 +350,15 @@ An artificial neural network is an interconnected group of nodes, akin to the va
 <ul>
 	<li><i>a{i,k}</i> is the activation (value) of node <i>i</i> in layer <i>k</i></li>
 	<li><i>b{i,k}</i> is the bias of node <i>i</i> in layer <i>k</i></li>
-	<li><i>w{k,ji}</i> is the weight (influence) of node <i>j</i> in layer <i>k-1</i> on node<i>i</i> in layer <i>k</i></li>
+	<li><i>w{k,ji}</i> is the weight (influence) of node <i>j</i> in layer <i>k-1</i> on node <i>i</i> in layer <i>k</i></li>
 	<li><i>o{k,j}</i> is the output of node <i>j</i> in layer <i>k</i></li>
 	<li><i>r{k}</i> is the number of nodes in layer <i>k</i></li>
 </ul>
+<p>The second part of the above equation treats the bias as an extra weight corresponding to a node of set value 1.</p>
+<p>There is more to a neural network to make it useful, including activation functions, however the above equation is where linear algebra is most pertinent in the running of these networks.</p>
+
 <h2><span class="mw-headline" id="Models">Using linear algebra</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Artificial_neural_network&amp;action=edit&amp;section=7" title="Edit section: Models">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>An <i>(artificial) neural network</i> is a network of simple elements called <i><a href="/wiki/Artificial_neuron" title="Artificial neuron">neurons</a></i>, which receive input, change their internal state (<i>activation</i>) according to that input, and produce output depending on the input and activation. The <i>network</i> forms by connecting the output of certain neurons to the input of other neurons forming a <a href="/wiki/Directed_graph" title="Directed graph">directed</a>, <a href="/wiki/Weighted_graph" class="mw-redirect" title="Weighted graph">weighted graph</a>. The weights as well as the <a href="/wiki/Activation_function" title="Activation function">functions that compute the activation</a> can be modified by a process called <i>learning</i> which is governed by a <i><a href="/wiki/Learning_rule" title="Learning rule">learning rule</a></i>.<sup id="cite_ref-Zell1994ch5.2_50-0" class="reference"><a href="#cite_note-Zell1994ch5.2-50">[50]</a></sup></p>
-<h3><span class="mw-headline" id="Components_of_an_artificial_neural_network">Components of an artificial neural network</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Artificial_neural_network&amp;action=edit&amp;section=8" title="Edit section: Components of an artificial neural network">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
-<h4><span class="mw-headline" id="Neurons">Neurons</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Artificial_neural_network&amp;action=edit&amp;section=9" title="Edit section: Neurons">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
-<p>A neuron with label </p>
+<p>We are going to look specifically at the calculation of a single layer. Using the same variables as above, we will remove subscripts to represent the set of all nodes in a specific layer as a vector (e.g. a{k} is the vector of activations of all nodes in layer <i>k</i>).</p>
 	
 <h2><span class="mw-headline" id="Variants">Application</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Artificial_neural_network&amp;action=edit&amp;section=23" title="Edit section: Variants">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
 <h3><span class="mw-headline" id="Group_method_of_data_handling">Group method of data handling</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Artificial_neural_network&amp;action=edit&amp;section=24" title="Edit section: Group method of data handling">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
