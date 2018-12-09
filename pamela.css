@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC')
 body{
   background-color: "black";
 }
 #everything{
-  font-size: 150px; 
+  text-align: center;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 25.5vw;
 }
