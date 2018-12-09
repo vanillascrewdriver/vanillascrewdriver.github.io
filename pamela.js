@@ -25,4 +25,4 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-fitty('h1');
+fitty('.fit');
