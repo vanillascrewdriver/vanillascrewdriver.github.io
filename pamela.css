@@ -1,9 +1,6 @@
 body{
   background-color: "black";
 }
-h1{
-  font-size: 100px;
-}
-#countdown{
-  font-size: 150px;
+#everything{
+  font-size: 150px; 
 }
