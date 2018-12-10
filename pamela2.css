@@ -1,5 +1,3 @@
-/* keyframes definition for WebKit browsers */
-
 @-webkit-keyframes travel2 {
   from { }
   to {
@@ -7,20 +5,14 @@
     margin-left: -50px;
     -webkit-transform: rotateZ(360deg) rotateY(360deg);
   }
-}
-
-@-webkit-keyframes bounce2 {
+}@-webkit-keyframes bounce2 {
   from { }
   to {
     bottom: 100%;
     margin-bottom: -50px;
     -webkit-transform: rotateZ(360deg);
   }
-}
-
-/* keyframes definition for other browsers */
-
-@keyframes travel2 {
+}@keyframes travel2 {
   from {
     left: 0;
     margin-left: 0;
@@ -35,9 +27,7 @@
     -ms-transform: rotateZ(360deg) rotateY(360deg);
     transform: rotateZ(360deg) rotateY(360deg);
   }
-}
-
-@keyframes bounce2 {
+}@keyframes bounce2 {
   from {
     bottom: 0;
     margin-bottom: 0;
@@ -52,55 +42,4 @@
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
-
-/* styles for the stage and animated elements */
-
-#stage2 {
-  position: relative;
-  margin: 1em 0;
-  width: 544px;
-  height: 320px;
-  box-shadow: inset 0 0 20px #fff;
-  background: url(/images/meadow.jpg) no-repeat;
-  -webkit-perspective: 200px;
-  -moz-perspective: 200px;
-  -ms-perspective: 200px;
-  perspective: 200px;
-}
-
-#traveler2 {
-  position: absolute;
-  width: 50px;
-  height: 320px;
-
-  -webkit-animation-name: travel2;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-duration: 4.8s;
-
-  animation-name: travel2;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-duration: 4.8s;
-}
-
-#stage2:hover #traveler2 { outline: 1px dashed #666; }
-
-#bouncer2 {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-
-  -webkit-animation-name: bounce2;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-duration: 4.2s;
-
-  animation-name: bounce2;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-duration: 4.2s;
-}
+}#stage2{position:relative;margin:1em 0;width:544px;height:320px;box-shadow:inset 0 0 20px #fff;background:url(/images/meadow.jpg) no-repeat;-webkit-perspective:200px;-moz-perspective:200px;-ms-perspective:200px;perspective:200px}#traveler2{position:absolute;width:50px;height:320px;-webkit-animation-name:travel2;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:infinite;-webkit-animation-direction:alternate;-webkit-animation-duration:4.8s;animation-name:travel2;animation-timing-function:linear;animation-iteration-count:infinite;animation-direction:alternate;animation-duration:4.8s}#stage2:hover #traveler2{outline:1px dashed #666}#bouncer2{width:50px;height:50px;position:absolute;-webkit-animation-name:bounce2;-webkit-animation-iteration-count:infinite;-webkit-animation-direction:alternate;-webkit-animation-duration:4.2s;animation-name:bounce2;animation-iteration-count:infinite;animation-direction:alternate;animation-duration:4.2s}
